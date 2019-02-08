@@ -2,7 +2,10 @@
 
 class TennisGame3 implements TennisGame
 {
+    /** @var int */
     private $p2 = 0;
+
+    /** @var int */
     private $p1 = 0;
     private $p1N = '';
     private $p2N = '';
@@ -28,13 +31,9 @@ class TennisGame3 implements TennisGame
         }
     }
 
-    public function wonPoint($playerName)
+    public function wonPoint($playerName): void
     {
-        if ($playerName == "player1") {
-            $this->p1++;
-        } else {
-            $this->p2++;
-        }
+        ($playerName === 'player1') ? $this->p1++: $this->p2++;
     }
 
 }

@@ -27,6 +27,7 @@ class TennisGame1Test extends TestMaster
      * @param int $score1
      * @param int $score2
      * @param string $expectedResult
+     *
      * @dataProvider data
      */
     public function testScores($score1, $score2, $expectedResult)
